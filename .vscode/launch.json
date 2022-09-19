@@ -1,0 +1,27 @@
+{ 
+  "version": "0.2.0", 
+  "configurations": [ 
+    { 
+      "type": "node", 
+      "request": "launch", 
+      "runtimeVersion": "16.16.0", 
+      "name": "hardhat compile", 
+      "runtimeExecutable": "npx", 
+      "runtimeArgs": [ 
+        "hardhat", 
+      ], 
+      "args": ["compile"] 
+    }, 
+    { 
+      "type": "node", 
+      "request": "launch", 
+      "runtimeVersion": "16.16.0", 
+      "name": "hardhat test", 
+      "runtimeExecutable": "npx", 
+      "runtimeArgs": [ 
+        "hardhat", 
+      ], 
+      "args": ["test"] 
+    } 
+  ] 
+}
