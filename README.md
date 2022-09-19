@@ -9,7 +9,8 @@ nvm use 16
 # rename .env.example to .env
 # replace alchemy url and private key in .env file
 npx hardhat compile
-npx hardhat test
+# test from mainnet fork
+npx hardhat test 
 
 # delete the artifacts & cache folder
 npx hardhat deploy --network goerli
