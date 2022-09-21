@@ -6,6 +6,7 @@ require("hardhat-gas-reporter")
 require("hardhat-contract-sizer")
 require("@appliedblockchain/chainlink-plugins-fund-link")
 require("dotenv").config()
+require("./tasks")
 
 /**
  * @type import('hardhat/config').HardhatUserConfig
@@ -53,6 +54,7 @@ module.exports = {
       //   },
       saveDeployments: true,
       chainId: 5,
+      timeout: 60000
     },
     mainnet: {
       url: MAINNET_RPC_URL,

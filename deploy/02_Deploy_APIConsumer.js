@@ -41,7 +41,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
   })
 
   if (!developmentChains.includes(network.name) && process.env.ETHERSCAN_API_KEY) {
-    log("Verifying...")
+    log(`Verifying...@ ${apiConsumer.address}`)
     await verify(apiConsumer.address, args)
   }
 

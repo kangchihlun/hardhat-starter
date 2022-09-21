@@ -10,7 +10,23 @@
       "runtimeArgs": [ 
         "hardhat", 
       ], 
-      "args": ["test"] 
-    } 
+      "args": ["test","--network","goerli"] 
+    },
+    { 
+      "type": "node", 
+      "request": "launch", 
+      "runtimeVersion": "16.16.0", 
+      "name": "test request goerli", 
+      "runtimeExecutable": "npx", 
+      "runtimeArgs": [ 
+        "hardhat", 
+      ], 
+      "args": ["read-data",
+        "--contract",
+        "0x6b151cf1fc741b59f3a015a70648bb2289d08034",
+        "--network",
+        "goerli"
+      ] 
+    },
   ] 
 }
