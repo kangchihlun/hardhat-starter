@@ -5,17 +5,6 @@
       "type": "node", 
       "request": "launch", 
       "runtimeVersion": "16.16.0", 
-      "name": "hardhat compile", 
-      "runtimeExecutable": "npx", 
-      "runtimeArgs": [ 
-        "hardhat", 
-      ], 
-      "args": ["compile"] 
-    }, 
-    { 
-      "type": "node", 
-      "request": "launch", 
-      "runtimeVersion": "16.16.0", 
       "name": "hardhat test", 
       "runtimeExecutable": "npx", 
       "runtimeArgs": [ 

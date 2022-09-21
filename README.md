@@ -8,9 +8,8 @@ Try running some of the following tasks:
 nvm use 16
 # rename .env.example to .env
 # replace alchemy url and private key in .env file
-npx hardhat compile
-# test from mainnet fork
-npx hardhat test 
+npm i 
+yarn hardhat test
 
 # delete the artifacts & cache folder
 npx hardhat deploy --network goerli
